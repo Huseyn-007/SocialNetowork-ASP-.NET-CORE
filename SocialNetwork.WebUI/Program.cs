@@ -57,7 +57,7 @@ builder.Services.AddScoped<ILikedCommentService,LikedCommentService>();
 builder.Services.AddScoped<IMyNotificationDAL, MyNotificationDAL>();
 builder.Services.AddScoped<IMyNotificationService, MyNotificationService>();
 
-var connection = builder.Configuration.GetConnectionString("Default");
+var connection = builder.Configuration.GetConnectionString("Production");
 
 builder.Services.AddDbContext<SocialNetworkDbContext>(options =>
 {
